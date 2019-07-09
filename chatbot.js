@@ -1,6 +1,9 @@
-var np = /이{0}잉/;
+var registeredRoom = {};
+var customCommandList = {};
 
 var d = new Date();
+
+var np = /이{0}잉/;
 
 var dic = {};
 dic['상준'] = 123;

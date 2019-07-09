@@ -1,4 +1,4 @@
-var room = ["한상우" ,"우주로가는 카오스", "중학교", "5인팟"];
+var roomNames = ["한상우" ,"우주로가는 카오스", "중학교", "5인팟"];
 var primary = ["@운세", "@강화", "@한강", "@궁합", "@학습"];
 var custom = {};
 
@@ -7,7 +7,15 @@ var d = new Date();
 
 function isValidRoom(roomName)
 {
-	return rooName in room;
+	var isValid = false;
+
+	for i in roomNames
+	{
+		if(i == roomName)
+			isValid = true;
+	}
+
+	return isValid;
 }
 
 function isPrimaryCommand(msg)

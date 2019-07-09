@@ -23,7 +23,18 @@ if (msg == "@도움말")
 
 function response(room, msg, sender, isGroupChat, replier, ImageDB)
 {
-	if(room == "중학교")
+	/*
+	primal 명령어 실행 후에
+	사용자 지정 명령어
+	*/
+	if (room == "우주로가는 카오스")
+	{
+		if(msg == "@한강")
+		{
+			replier.reply(Utils.getWebText("https://www.wpws.kr/hangang/", false).split("</i>")[1].split("</p>")[0]);
+		}
+	}
+	else if(room == "중학교")
 	{
 		if(msg == "@운세")
 		{
